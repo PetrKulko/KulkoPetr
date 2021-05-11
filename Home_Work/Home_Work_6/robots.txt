@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /aptimaze/
+Disallow: /admin/
+Disallow: /avtar/
+Sitemap: https://site.com/sitemap.xml
+Sitemap: https://site.com/sitemap_img.xml
+Sitemap: https://site.com/sitemap_video.xml
+
+
+
+User-agent: Yandex
+Allow: /aptimaze/
+Disallow: /admin/
+Disallow: /avtar/
+Host: https://site.com/
