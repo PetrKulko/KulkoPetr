@@ -1,0 +1,16 @@
+.red_color h2{
+    color: red;
+}
+
+.green_color p{
+    font-size: 16px;
+    color: green;
+}
+
+.boxing h2{
+    color: grey;
+}
+
+.boxing p{
+    font-size: 14px;
+}
