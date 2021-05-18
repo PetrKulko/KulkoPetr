@@ -1,0 +1,64 @@
+/* == GENERAL == */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.background{
+    background: url("../img/top-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    color: aliceblue;
+    padding: 150px 0;
+    display: flex;
+    overflow: hidden;
+}
+/* == / GENERAL == */
+
+/* == First == */
+.first{
+    width: 50%;
+}
+
+.first__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.first__text{
+    text-transform: lowercase;
+    text-indent: 20px;
+}
+/* == / First == */
+
+/* == Second == */
+
+.second{
+    width: 50%;
+    padding: 50px 0;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 2px 10px;
+    margin-bottom: 20px;
+}
+
+.form__textarea{
+    width: 50%;
+    height: 200px;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 2px 10px;
+    display: block;
+}
+
+.form__btn{
+    width: 200px;
+    height: 50px;
+}
+
+/* == / Second == */
