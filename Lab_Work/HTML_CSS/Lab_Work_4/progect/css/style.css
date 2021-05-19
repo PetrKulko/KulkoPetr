@@ -1,0 +1,166 @@
+/* Свойства заданные body наследуются его дочерними элементами. Так же и с последующими div элементами, которые являются родителями для своих внутренних элементов. Если для div X задаётся color: white, то у его внутренних ссылок, списков и т.д. цвет будет white.*/
+
+/* Normalize используется для обнуления стандартных стилей браузера. Для его использования мы должны скопировать код обнуления с официального репозитирия necolas.github.io и подключить его в свой файл css */
+
+/* == GENERAL == */
+
+body{
+    font-style: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: #f8c7b6; 
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* == / GENERAL == */
+
+/* == HEADER == */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8c7b6; 
+    z-index: 10;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-img{
+    width: 200px;
+    height: 60px;
+}
+
+.header__nav-lists{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.header__nav-list + .header__nav-list{
+    margin-left: 20px;
+}
+/* == / HEADER == */
+
+/* == TOP == */
+.top__inner{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__content{
+    width: 50%;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.top__content-title{
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.top__bg-img{
+    width: 100%;
+    border-radius: 55px;
+}
+
+/* == / TOP == */
+
+/* == DESCR == */
+.descr__inner{
+    margin: 100px 0;
+    text-align: center;
+}
+
+.descr__title{
+    font-size: 34px;
+    line-height: 60px;
+}
+
+.descr__text{
+    line-height: 50px;
+    font-size: 24px;
+}
+/* == / DESCR == */
+
+/* == PHOTO == */
+.photo__inner{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo__title{
+    text-align: center;
+}
+
+.skype{
+    background: url("../img/css_sprites.png") no-repeat;
+    width: 170px;
+    height: 170px;
+    background-position: 0px 0px;
+    transition: all .8s;
+}
+
+.skype:hover{
+    transform: translate(-20px, 20px);
+    transition: all .8s;
+}
+
+.youtube{
+    background: url("../img/css_sprites.png") no-repeat;
+    width: 170px;
+    height: 170px;
+    background-position: -170px 0px;
+    transition: all .8s;
+}
+
+.youtube:hover{
+    transform: translateX(20px);
+    transition: all .8s;
+}
+
+.twitter{
+    background: url("../img/css_sprites.png") no-repeat;
+    width: 170px;
+    height: 170px;
+    background-position: -170px -170px;
+    transition: all .8s;
+}
+
+.twitter:hover{
+    transform: rotateX(40deg);
+    transition: all .8s;
+}
+
+.watsup{
+    background: url("../img/css_sprites.png") no-repeat;
+    width: 170px;
+    height: 170px;
+    background-position: 0px -170px;
+    transition: all .8s;
+}
+
+.watsup:hover{
+    transform: translateX(20px);
+    transition: all .8s;
+}
+
+/* == / PHOTO == */
+
+/* == FOOTER == */
+
+.footer__title{
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+/* == / FOOTER == */
