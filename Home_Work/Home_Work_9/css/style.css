@@ -1,0 +1,40 @@
+/* font-family: 'latoblack';
+font-family: 'latoblack_italic';
+
+font-family: 'latobold_italic';
+font-family: 'latoitalic';
+font-family: 'latolight';
+font-family: 'latolight_italic';
+font-family: 'latoregular';
+font-family: 'latohairline';
+font-family: 'latohairline_italic'; */
+
+ul, li{
+    list-style: none;
+}
+
+ul.menu li a.link__item{
+    font-family: 'latobold';
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+ul.menu li a.link__item:hover{
+    font-size: 42px;
+    color: orangered;
+}
+
+ul.menu__sub li a.link__item{
+    font-family: 'latobold';
+    font-size: 32px;
+    line-height: 40px;
+    text-decoration: none;
+    color: orangered;
+}
+
+ul.menu__sub li a.link__item:hover{
+    font-size: 42px;
+    color: black;
+}
