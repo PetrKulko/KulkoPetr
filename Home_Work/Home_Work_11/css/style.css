@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.images{
+    width: 300px;
+    height: 235px;
+    float: left;
+}
+
+.images + .images{
+    margin-left: 135px;
+}
+
+.clear{
+    clear: both;
+}
+
+.items{
+    margin-top: 20px;
+}
+
+.items__img{
+    width: 350px;
+    height: 240px;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.items__text{
+    font-size: 24px;
+    line-height: 24px;
+    text-align: justify;
+}
