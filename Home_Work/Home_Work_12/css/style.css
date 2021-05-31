@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #333;
+    font-size: 14px;
+    font-family: 'Arial';
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #ccc;
+    padding-top: 20px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+}
+
+.slogan{
+    float: left;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 11px;
+}
+
+.header-contact{
+    float: right;
+}
+
+.header-contact a{
+    display: block;
+    text-decoration: none;
+    line-height: 19px;
+    color: #0f428e;
+    font-weight: bold;
+}
+
+.header-contact a:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    color: #02175C;
+}
+
+.nav ul.menu{
+    list-style: none;
+}
+
+.nav ul.menu li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul.menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.nav ul.menu li a:hover{
+    background: #0E8390;
+}
+
+.nav ul.menu li ul.sub-menu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: #067162;
+    width: 200px;
+    z-index: 99999;
+}
+
+.nav ul.menu li ul.sub-menu li a{
+    padding: 3px 20px;
+    display: block;
+}
+
+.nav ul.menu li ul.sub-menu li{
+    display: block;
+}
+
+.nav ul.menu li:nth-child(5):hover ul.sub-menu{
+    display: block;
+}
+
+.slide-1{
+    background-image: url(../img/slide-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.slide-2{
+    background-image: url(../img/slide-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.slide-3{
+    background-image: url(../img/slide-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.slider{
+    overflow: hidden;
+}
