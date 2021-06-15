@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+header{
+    padding: 50px 0;
+    background: #f1dfce;
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* == footer == */
+body, html{
+    height: 100%;
+}
+
+.for__page{
+    min-height: 100%;
+    position: relative;
+}
+
+.page{
+    padding-bottom: 100px;
+}
+
+footer{
+    background: #f1dfce;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+/* == / footer == */
+
+
+/* === TEXT SHADOW === */
+
+/* === прямоугольная кнопка в обычном состоянии черная при наведении border плавный 8px === */
+
+.button{
+    width: 200px;
+    height: auto;
+    padding: 10px 0;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.button:hover{
+    border: 8px solid black;
+    transition: all .5s;
+}
+
+/* === animation квадрат 100 на 100 нужно переместить по квадрату и менять при этом цвета при каждом проценте === */
+
+.wrapper{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: greenyellow;
+    border: 2px solid black; 
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: tomato;
+    border: 2px solid black;
+    animation-name: item;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes item{
+    from{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0;
+        left: 400px;
+        background: blue;
+    }
+    50%{
+        top: 400px;
+        left: 400px;
+        background: #fff;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background: pink;
+    }
+    to{
+        top: 0px;
+        background: forestgreen;
+    }
+}
