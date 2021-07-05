@@ -1,0 +1,195 @@
+@media (max-width: 2500px){
+    .galery a{
+        height: 391px;
+    }
+}
+
+@media (max-width: 2000px){
+    .galery a{
+        height: 347px;
+    }
+    .bg-carousel-reviews{
+        height: 500px;
+    }
+}
+
+@media (max-width: 1800px){
+    .galery a{
+        height: 326px;
+    }
+}
+
+@media (max-width: 1650px){
+    .galery a{
+        height: 288px;
+    }
+}
+
+@media (max-width: 1480px){
+    .galery a{
+        height: 260px;
+    }
+}
+
+@media (max-width: 1199px){
+    .block2{
+        padding-bottom: 60px;
+    }
+    .owl-carousel-reviews{
+        padding: 85px 40px;
+    }
+}
+
+@media (max-width: 991px){
+    .footer__item{
+        margin-bottom: 40px;
+    }
+    .footer__title {
+        margin-bottom: 10px;
+    }
+    .bg-carousel-reviews{
+        display: none;
+    }
+    .owl-carousel-reviews{
+        width: 100%;
+    }
+    .box-team{
+        margin-bottom: 40px;
+    }
+    .galery a{
+        width: 50%;
+    }
+    .baner{
+        padding: 203px 0 110px;
+    }
+    .baner-text h1{
+        font-size: 50px;
+        line-height: 52px;
+        margin-bottom: 30px;
+    }
+    .box-text-baner{
+        margin-bottom: 30px;
+    }
+    .nav-menu ul.menu li a {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .download__title {
+        font-size: 24px;
+    }
+    .team{
+        padding: 60px 0;
+    }
+    .box-team{
+        max-width: 310px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .box-servise{
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .logo{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .header{
+        padding-top: 25px;
+    }
+    .baner{
+        top: -146px;
+    }
+    .nav-menu ul.menu{
+        justify-content: center;
+    }
+    .header-text h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .box-text-baner{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .box-servise{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px){
+    .download__title {
+        font-size: 20px;
+    }
+    .download__description {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+    .galery a{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .galery a img{
+        height: auto;
+        object-fit: inherit;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .galery a:nth-child(5), .galery a:nth-child(8) {
+        margin-right: auto;
+    }
+    .galery a:nth-child(1), .galery a:nth-child(8) {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .baner-text h1 {
+        font-size: 35px;
+    }
+    .download__title {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .carousel-reviews {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 470px){
+    .nav-menu ul.menu li a{
+        font-size: 11px;
+        padding-left: 9px;
+    }
+    .separator{
+        padding-bottom: 11px;
+    }
+    .baner{
+        padding: 174px 0 58px;
+    }
+    .baner-text h1{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .download__title {
+        font-size: 14px;
+    }
+    .download__btn {
+        width: 230px;
+    }
+    .footer__copy-text {
+        font-size: 11px;
+    }
+    .footer__copy {
+        padding: 20px 0 20px;
+        margin-top: 30px;
+    }
+}
