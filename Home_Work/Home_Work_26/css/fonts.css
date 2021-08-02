@@ -1,0 +1,26 @@
+/* == FONTS == */
+@font-face {
+  font-family: 'impacted-regular';
+  src: url("../fonts/") format("woff2"), url("../fonts/Impacted.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'myriadPro-regular';
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'agencyFB-regular';
+  src: url("../fonts/AgencyFB-RegularCondensed.woff2") format("woff2"), url("../fonts/AgencyFB-RegularCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'verdana-regular';
+  src: url("../fonts/Verdana.woff2") format("woff2"), url("../fonts/Verdana.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+/* == . FONTS == */
