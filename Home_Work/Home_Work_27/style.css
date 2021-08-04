@@ -1,0 +1,13 @@
+.block1{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.text span{
+    display: none;
+}
+
+.block2{
+    margin-top: 25px;
+    text-align: center;
+}
