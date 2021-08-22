@@ -41,6 +41,9 @@
 }
 
 @media (max-width: 991px){
+    .footer__copy {
+        margin-top: 33px;
+    }
     .footer__item{
         margin-bottom: 40px;
     }
@@ -58,6 +61,7 @@
     }
     .galery a{
         width: 50%;
+        margin-bottom: 20px;
     }
     .baner{
         padding: 203px 0 110px;
@@ -190,6 +194,5 @@
     }
     .footer__copy {
         padding: 20px 0 20px;
-        margin-top: 30px;
     }
 }

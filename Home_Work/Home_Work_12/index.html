@@ -1,101 +1,353 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="vector/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vector/OwlCarousel/dist/assets/owl.theme.default.min.css">
-    <title>Site</title>
-    <script src="js/jquery-3.0.0.js"></script>
-    <script src="vector/OwlCarousel/dist/owl.carousel.min.js"></script>
-    <script src="js/customs.js"></script>
+	<meta charset="UTF-8">
+	<title>site</title>
+	<link rel="stylesheet" type="text/css" href="vendore/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendore/OwlCarousel/dist/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendore/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+	<!--В первую очередь подключаем библиотеку-->
+	<script type="text/javascript" src="vendore/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<!--Потом плагин-->
+	<script type="text/javascript" src="js/customs.js"></script>
+	<!--Третью потому что прописываем иницилизацию-->
 </head>
 
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+
+	}
+
+	body {
+		color: #333;
+		font-size: 14px;
+		font-family: 'Arial';
+	}
+
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.container {
+		width: 1170px;
+		margin: 0 auto;
+	}
+
+	.header {
+		background: #ccc;
+		padding-top: 20px;
+	}
+
+	.logo {
+		float: left;
+		width: 200px;
+	}
+
+	.slogon {
+		float: left;
+		width: 400px;
+		text-align: center;
+		font-weight: bold;
+		margin-top: 11px;
+	}
+
+	.header-contact {
+		float: right;
+	}
+
+	.header-contact a {
+		display: block;
+		text-decoration: none;
+		line-height: 19px;
+		color: #0f428e;
+		font-weight: bold;
+
+	}
+
+	.header-contact a:hover {
+		text-decoration: underline;
+
+	}
+
+	.nav {
+		background: #02175C;
+	}
+
+	.nav ul.menu {
+		list-style: none;
+	}
+
+	.nav ul.menu li {
+		display: inline-block;
+		position: relative;
+	}
+
+	.nav ul.menu li a {
+		color: #fff;
+		text-decoration: none;
+		padding: 15px 20px;
+		display: inline-block;
+		font-size: 15px;
+	}
+
+	.nav ul.menu li a:hover {
+		background: #0E8390;
+	}
+
+	.nav ul.menu li ul.sub-menu {
+		list-style: none;
+		position: absolute;
+		left: 0;
+		top: 45px;
+		background: #067162;
+		width: 200px;
+		padding: 10px 0;
+		display: none;
+		z-index: 10;
+	}
+
+	.nav ul.menu li ul.sub-menu li a {
+		padding: 3px 20px;
+		display: block;
+	}
+
+	.nav ul.menu li ul.sub-menu li {
+		display: block;
+	}
+
+	.nav ul.menu li:nth-child(5):hover ul.sub-menu {
+		display: block;
+
+	}
+
+	.slide1 {
+		background: url(img/images1.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+
+	.slide2 {
+		background: url(img/images2.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+
+	.slide3 {
+		background: url(img/images3.jpeg) no-repeat;
+		background-size: cover;
+		padding: 200px 0;
+		background-position: center center;
+	}
+
+	.slider {
+		overflow: hidden;
+	}
+
+	#carousel-main .owl-item .item h2 {
+		font-size: 50px;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+
+	#carusel-main .owl-item .item p {
+		font-size: 20px;
+		color: #333;
+	}
+
+	.slide {
+		background: rgba(255, 255, 255, 0.5);
+		padding: 20px;
+		width: 604px;
+	}
+
+	#carousel-main .owl-nav owl-prev {
+		position: absolute;
+		left: 20px;
+		bottom: 50%;
+	}
+
+	#carousel-main .owl-nav owl-prev:hover {
+		background: none;
+		opacity: 0.6;
+	}
+
+	#carousel-main .owl-nav owl-next {
+		position: absolute;
+		left: 20px;
+		bottom: 50%;
+	}
+
+	#carousel-main .owl-nav owl-next,
+	#carousel-main .owl-nav owl-prev {
+		font-size: 40px;
+		color: #fff;
+	}
+
+	.sidebar {
+		width: 400px;
+		float: left;
+		background: orange;
+		padding: 20px;
+		box-sizing: border-box;
+		font-size: 15px;
+	}
+
+	.aside {
+		width: 770px;
+		float: left;
+	}
+
+	/* menu */
+
+	.sidebar ul.sidebar_menu {
+		list-style: none;
+	}
+
+	.sidebar ul.sidebar_menu li {
+		display: inline-block;
+	}
+
+	.sidebar ul.sidebar_menu li a {
+		font-size: 18px;
+		color: #333;
+		text-decoration: none;
+		font-weight: 700;
+		padding: 5px 5px;
+		display: block;
+		width: 100%;
+	}
+
+	.sidebar ul.sidebar_menu li a:hover {
+		color: white;
+		background-color: red;
+		transition: all .2s;
+	}
+
+	/* menu */
+
+	.footer {
+		background-color: blue;
+		color: #fff;
+	}
+</style>
+
 <body>
-
-    <div class="for_page">
-        <div class="page">
-            <header class="header" id="header">
-                <div class="container">
-                    <a class="logo" href="/"><img src="img/logo.png" alt="Main Academy"></a>
-                    <div class="slogan">Первая и крупнейшая в Украине комплексная система подготовки</div>
-                    <div class="header-contact">
-                        <a href="tel:+380987674645">(098) 767 46 45</a>
-                        <a href="tel:+380507786425">(050) 778 64 25</a>
-                        <a href="mailto:mainacademy@info">mainacademy@info</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <nav class="nav">
-                    <div class="container">
-                        <ul class="menu">
-                            <li class="item curent-item"><a class="link-item" href="/">Главная</a></li>
-                            <li class="item"><a class="link-item" href="#">Курсы</a></li>
-                            <li class="item"><a class="link-item" href="#">Карьера</a></li>
-                            <li class="item"><a class="link-item" href="#">Тесты</a></li>
-                            <li class="item"><a class="link-item" href="#">Блог</a>
-                                <ul class="sub-menu">
-                                    <li class="child-item"><a class="link-item" href="#">Полезная информация</a></li>
-                                    <li class="child-item"><a class="link-item" href="#">Наш блог</a></li>
-                                    <li class="child-item"><a class="link-item" href="#">Актуальная информация</a></li>
-                                </ul>
-                            </li>
-                            <li class="item"><a class="link-item" href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <section class="slider">
-                <div class="owl-carusel" id="carusel-main">
-                    <div class="item slide-1">
-                        <div class="container">
-                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem maiores
-                                possimus
-                                ad
-                                eius natus ratione porro cumque. Consequatur fuga debitis perferendis, vero sed aperiam
-                                itaque qui eaque nihil natus odit.</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores non a eum vel, qui
-                                nulla
-                                delectus inventore dignissimos minus incidunt consequatur necessitatibus nesciunt totam
-                                illum temporibus, provident similique, maxime iste.</p>
-                        </div>
-                    </div>
-                    <div class="item slide-2">
-                        <div class="container">
-                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem maiores
-                                possimus ad
-                                eius natus ratione porro cumque. Consequatur fuga debitis perferendis, vero sed aperiam
-                                itaque qui eaque nihil natus odit.</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores non a eum vel, qui
-                                nulla
-                                delectus inventore dignissimos minus incidunt consequatur necessitatibus nesciunt totam
-                                illum temporibus, provident similique, maxime iste.</p>
-                        </div>
-                    </div>
-                    <div class="item slide-3">
-                        <div class="container">
-                            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem maiores
-                                possimus ad
-                                eius natus ratione porro cumque. Consequatur fuga debitis perferendis, vero sed aperiam
-                                itaque qui eaque nihil natus odit.
-                            </h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores non a eum vel, qui
-                                nulla
-                                delectus inventore dignissimos minus incidunt consequatur necessitatibus nesciunt totam
-                                illum temporibus, provident similique, maxime iste.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-
-
-
+	<div class="for_page">
+		<div class="page">
+			<header class="header" id="header">
+				<div class="container">
+					<a href="/" class="logo">
+						<img src="img/logo.png" alt="Main Academy" />
+					</a>
+					<div class="slogon">Первая и крупнейшая компания сертифицированных специалистов для IT-компаний
+					</div>
+					<div class="header-contact">
+						<a href="tel:+380987674645">(098) 767 46 45</a>
+						<a href="tel:+380507866745">(050) 786 67 45</a>
+						<a href="mailto:mainacademy@info">mainacademy@info</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<nav class="nav">
+					<div class="container">
+						<ul class="menu">
+							<li class="item curent-item"><a href="/" class="link-item">Главная</a></li>
+							<li class="item"><a href="#" class="link-item">Курсы</a></li>
+							<li class="item"><a href="#" class="link-item">Карьера</a></li>
+							<li class="item"><a href="#" class="link-item">Тесты</a></li>
+							<li class="item"><a href="#" class="link-item">Блог</a>
+								<ul class="sub-menu">
+									<li class="child-item"><a href="#" class="link-item">полезная информация</a></li>
+									<li class="child-item"><a href="#" class="link-item">Наш Блог</a></li>
+									<li class="child-item"><a href="#" class="link-item">Актуальная информация</a></li>
+								</ul>
+							</li>
+							<li class="item"><a href="#" class="link-item">Контакты</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<section class="slider">
+				<div class="owl-carousel owl-theme" id="carousel-main">
+					<div class="item slide1">
+						<div class="container">
+							<div class="slide">
+								<h2>Lorem ipsum1</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							</div>
+						</div>
+					</div>
+					<div class="item slide2">
+						<div class="container">
+							<div class="slide">
+								<h2>Lorem ipsum2</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							</div>
+						</div>
+					</div>
+					<div class="item slide3">
+						<div class="container">
+							<div class="slide">
+								<h2>Lorem ipsum3</h2>
+								<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="container">
+				<sidebar class="sidebar">
+					<ul class="sidebar_menu">
+						<li class="item"><a class="link_item" href="#">Главная</a></li>
+						<li class="item"><a class="link_item" href="#">О нас</a></li>
+						<li class="item"><a class="link_item" href="#">Курсы</a></li>
+						<li class="item"><a class="link_item" href="#">Блог</a></li>
+						<li class="item"><a class="link_item" href="#">Фото</a></li>
+					</ul>
+				</sidebar>
+				<aside class="aside">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus culpa ipsam, porro nisi,
+						quibusdam voluptate tempora laborum eos rerum natus aliquid expedita quo beatae non, omnis
+						libero
+						cum adipisci!
+					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus culpa ipsam, porro nisi,
+						quibusdam voluptate tempora laborum eos rerum natus aliquid expedita quo beatae non, omnis
+						libero
+						cum adipisci!
+					</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa temporibus culpa ipsam, porro nisi,
+						quibusdam voluptate tempora laborum eos rerum natus aliquid expedita quo beatae non, omnis
+						libero
+						cum adipisci!
+					</p>
+				</aside>
+				<div class="footer">
+					<div class="container">
+						Text
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

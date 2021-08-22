@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.nav-menu{
+
+}
+
+.nav-menu ul.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul.menu li{
+    list-style: none;
+}
+
+.nav-menu ul.menu li a{
+    font-family: 'Raleway';
+    font-weight: normal;
+    color: #fff;
+    font-size: 13px;
+    padding-left: 45px;
+    transition: 0.3s;
+    text-transform: uppercase;   
+}
+
+.nav-menu ul.menu li a:hover{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.header{
+    position: relative;
+    z-index: 2;
+    padding-top: 40px;
+}
+
+.baner{
+    position: relative;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: left top;
+    padding: 290px 0 155px;
+    z-index: 1;
+    top: -120px;
+}
+
+.separator{
+    border-bottom: solid 1px #4f5268;
+    padding-bottom: 35px;
+}
+
+.baner-text h1{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+    max-width: 842px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 65px;
+    margin-bottom: 33px;
+}
+
+.box-text-baner{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    max-width: 918px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 74px;
+}
+
+.btn-baner{
+    display: block;
+    background: #e84545;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    transition:  0.3s;
+    padding: 15px 0;
+    text-align: center;
+    max-width: 200px;
+    text-transform: uppercase;   
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.btn-baner:hover{
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: #333;
+}

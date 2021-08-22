@@ -4,18 +4,18 @@ jQuery(document).ready(function () {
 
 	'use strict';
 
-	var slid = jQuery('#carusel-main');
+	var slid = jQuery('#carousel-main');
 
 	slid.owlCarousel({
 		items: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 6000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
 		nav: true,
-		navText: ['<', '>'],
+		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 		dots: false,
 		mouseDrag: true,
 		margin: 30,
