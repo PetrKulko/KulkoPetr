@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a target="_blank" href="calc.html">Смотреть калькулятор</a>
+    <!-- === FORM === -->
+    <form class="formWithValidation">
+        <!-- === from === -->
+        <div>
+            <div>
+                <label>From:</label>
+            </div>
+            <div>
+                <input class="from field" type="text">
+            </div>
+        </div>
+        <!-- === / from === -->
+
+        <!-- === password === -->
+        <div>
+            <div>
+                <label>Password:</label>
+            </div>
+            <div>
+                <input class="password field" type="password">
+            </div>
+        </div>
+        <!-- === / password === -->
+
+        <!-- === password confirmation === -->
+        <div>
+            <div>
+                <label>Password confirmation:</label>
+            </div>
+            <div>
+                <input class="passwordConfirmation field" type="password">
+            </div>
+        </div>
+        <!-- === / password confirmation === -->
+
+        <!-- === where === -->
+        <div>
+            <div>
+                <label>Where:</label>
+            </div>
+            <div>
+                <select class="where field">
+                    <option></option>
+                    <option value="developers">Developers</option>
+                    <option value="managers">Managers</option>
+                    <option value="DevOps">DevOps</option>
+                </select>
+            </div>
+        </div>
+        <!-- === / where === -->
+
+        <!-- === message === -->
+        <div>
+            <div>
+                <label>Message:</label>
+            </div>
+            <div>
+                <textarea class="message field"></textarea>
+            </div>
+        </div>
+        <!-- === / message === -->
+
+        <!-- === submit === -->
+        <input class="validateBtn" type="submit" value="Validate">
+        <!-- === / submit === -->
+    </form>
+    <!-- === / FORM === -->
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
