@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>onmouseover</title>
+</head>
+<style>
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+
+	.wrapper {
+		overflow: hidden;
+	}
+
+	.wrapper,
+	.front,
+	.back {
+		width: 200px;
+		height: auto;
+	}
+
+	.front,
+	.back {
+		float: left;
+		transition: all 0.5s;
+	}
+
+	.wrapper:hover .front {
+		margin-left: -200px;
+	}
+
+	.back {
+		margin-left: -400px;
+	}
+
+	.wrapper:hover .back {
+		margin-left: 0;
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<div class="front">
+			<img src="images/boat.jpg" alt="img1">
+		</div>
+		<div class="back">
+			<img src="images/boat_two.jpeg" alt="img2">
+		</div>
+	</div>
+
+</body>
+
+</html>
