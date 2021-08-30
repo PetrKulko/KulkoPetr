@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 34</title>
+</head>
+
+<body>
+    <p id="text" style="display: none; width: 500px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae illum animi veritatis delectus
+        at sed quia molestias ullam accusamus corporis exercitationem error atque, asperiores beatae
+        blanditiis, esse aut harum debitis!
+    </p>
+    <img id="image" src="img_1.jpg" width="500" alt="img1">
+
+</body>
+
+<script>
+
+    let text = document.getElementById('text');
+
+    image.onmouseover = function () {
+        this.src = "img_2.jpg";
+    }
+
+    image.onmouseout = function () {
+        this.remove();
+        text.style.display = "block";
+    }
+
+</script>
+
+</html>
