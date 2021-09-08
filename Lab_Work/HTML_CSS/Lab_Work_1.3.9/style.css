@@ -1,0 +1,81 @@
+/* GENERAL */
+section {
+    padding: 20px 0;
+}
+/* HEADER */
+header {
+    display: flex;
+    background-color: #2f2ff3;
+    padding: 12px;
+}
+.header__button {
+    display: block;
+    padding: 8px 12px;
+    background-color: coral;
+    margin-right: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s ease-out;
+}
+.header__button:hover {
+    text-decoration: underline;
+}
+.header__button:last-of-type {
+    margin-right: 0;
+}
+.header__button-sign {
+    margin-left: auto;
+}
+/* EVENTS */
+
+.events__row {
+    display: flex;
+    margin: 0 0 12px 0;
+}
+.events__row:last-of-type {
+    margin: 0;
+}
+.events__column {
+    padding: 10px;
+}
+.events__column-description {
+    flex: 1 1 auto;
+    background-color: gray;
+}
+.events__column-date {
+    flex: 0 0 200px;
+    background-color: #7fffd4;  
+}
+.events__column-price {
+    flex: 0 0 200px;
+    background-color: #7fffd4;
+}
+
+/* JOBS */
+.jobs__item {
+    display: flex;
+    color: #ffffff;
+}
+.jobs__title {
+    margin: 15px;
+    padding: 15px;
+    background-color: #ff0000;
+    flex: 0 0 200px;
+}
+.jobs__description {
+    margin: 15px;
+    padding: 15px;
+    background-color: #ff4500;
+    flex: 1 1 auto;
+    display: flex;
+}
+.jobs__description p {
+    margin-right: 8px;
+}
+.jobs__description-btn {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    align-self: flex-end;
+}
