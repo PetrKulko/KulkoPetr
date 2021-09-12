@@ -1,0 +1,22 @@
+.banner{
+    background: url("./../img/banner.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 200px 0;
+}
+  
+.text{
+    background: #22f2fc;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    color: #333;
+    transition: all .5s ease 0s;
+}
+  
+.text:hover{
+    background: #db72f1;
+    color: #fff;
+    transition: all .5s ease 0s;
+}
