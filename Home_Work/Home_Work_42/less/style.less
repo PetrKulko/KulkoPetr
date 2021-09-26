@@ -1,0 +1,112 @@
+// == RESET ==
+*, **{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: @background;
+    color: @primary;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+// == / RESET ==
+
+// == GLOBAL ==
+
+// var
+@primary: black;
+@secondary: #fff;
+@logoColor: blue;
+@background: chocolate;
+
+
+// mixins
+.sectionPadding(@padding: 100px 0){
+    padding: @padding;
+}
+
+.borderRadius(@radius: 10px){
+    border-radius: @radius;
+}
+
+.fontWeight{
+    font-weight: 600;
+}
+// == / GLOBAL ==
+
+// == HEADER ==
+.header{
+    padding: 10px 0;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo{
+        background-color: @logoColor;
+        border-radius: 10px;
+
+        & a{
+            display: block;
+            padding: 10px;
+            .fontWeight;
+            color: @secondary;
+        }
+    }
+
+    &__nav{
+
+        & ul{
+            display: flex;
+            margin: 0;
+
+            & li{
+                list-style: none;
+                display: block;
+                margin-right: 10px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                & a{
+                    color: @primary;
+                    .fontWeight;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+// == / HEADER ==
+
+// == SECTIONS ==
+.one{
+    .sectionPadding(50px);
+    .borderRadius(20px);
+    background-color: @primary;
+}
+
+.two{
+    .sectionPadding(100px);
+    .borderRadius(30px);
+    background-color: @secondary;
+}
+
+.tree{
+    .sectionPadding(200px);
+    .borderRadius(40px);
+    background-color: @logoColor;
+}
+// == / SECTIONS ==

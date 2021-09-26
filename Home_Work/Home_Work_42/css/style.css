@@ -1,0 +1,83 @@
+*,
+** {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d2691e;
+  color: #000000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+.fontWeight {
+  font-weight: 600;
+}
+.header {
+  padding: 10px 0;
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__logo {
+  background-color: #0000ff;
+  border-radius: 10px;
+}
+.header__logo a {
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.header__nav ul li {
+  list-style: none;
+  display: block;
+  margin-right: 10px;
+}
+.header__nav ul li:last-child {
+  margin-right: 0;
+}
+.header__nav ul li a {
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.one {
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #000000;
+}
+.two {
+  padding: 100px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.tree {
+  padding: 200px;
+  border-radius: 40px;
+  background-color: #0000ff;
+}
